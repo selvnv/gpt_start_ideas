@@ -1,0 +1,11 @@
+{
+    "elements": {
+      "has_pet": ["yes", "no"],
+      "pet_type": ["dog", "cat"],
+      "dog_breed": ["labrador", "poodle"]
+    },
+    "dependencies": {
+      "pet_type": {"has_pet": "yes"},
+      "dog_breed": {"pet_type": "dog"}
+    }
+  }
